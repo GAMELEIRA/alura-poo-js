@@ -1,0 +1,21 @@
+{
+    "name": "alura-poo-js",
+    "version": "1.0.0",
+    "description": "Este repositório têm como objetivo alocar os exercicios com o decorrer do curso de Introdução a Orientação a Objetos com JavaScript.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GAMELEIRA/alura-poo-js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "module": "module",
+    "bugs": {
+        "url": "https://github.com/GAMELEIRA/alura-poo-js/issues"
+    },
+    "homepage": "https://github.com/GAMELEIRA/alura-poo-js#readme"
+}
