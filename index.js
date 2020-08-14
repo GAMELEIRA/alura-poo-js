@@ -4,34 +4,16 @@ const Cliente = require("./Cliente");
 
 const ContaCorrente = require("./ContaCorrente");
 
-const cliente1 = new Cliente();
+const cliente = new Cliente("Gabriel", "47878663890");
 
-cliente1.nome = "Ricardo";
+const conta = new ContaCorrente(cliente, 1000);
 
-cliente1.cpf = 12345678910;
+conta.teste();
 
-const cliente2 = new Cliente();
+console.log(conta);
 
-cliente2.nome = "Gabriel";
+let = a = 1;
 
-cliente2.cpf = 12345678910;
+console.log(a);
 
-const contaCorrenteRicardo = new ContaCorrente();
-
-cliente1.contaCorrente = contaCorrenteRicardo;
-
-contaCorrenteRicardo.saldo = 0;
-
-contaCorrenteRicardo.agencia = 1001;
-
-contaCorrenteRicardo.depositar = 100;
-
-contaCorrenteRicardo.sacar(50);
-
-console.log(cliente1);
-
-console.log(cliente2);
-
-console.log(contaCorrenteRicardo);
-
-const bla = () => { nome: "Gameleira", "" };
+throw new Error("Gabriel Gameleira é o brabo!");

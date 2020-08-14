@@ -1,47 +1,19 @@
-module.exports = class ContaCorrente {
+const Conta = require("./Conta.js");
 
-    //static contador = 0;
+module.exports = class ContaCorrente extends Conta {
 
-    agencia;
+    static _numerocontas = 0;
 
-    _saldo = 0;
+    constructor(cliente, agencia) {
 
-    sacar(saque) {
+        super(agencia, 0, agencia);
 
-        if (this._saldo >= saque) {
-
-            this._saldo -= saque;
-
-        } else {
-
-            console.log("Operação negada");
-
-        }
+        ContaCorrente._numerocontas++;
 
     }
 
-    depositar(valor) {
-
-        if (valor > 0) {
-
-            this._saldo += valor;
-
-        } else {
-
-            return null;
-
-        }
-
+    teste() {
+        console.log("Estou sendo rebelde");
     }
-
-    set e() {
-
-
-    }
-
-    //instanceof
-
-    transferir() {}
-
 
 }
